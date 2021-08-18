@@ -87,12 +87,16 @@ These are of in-built types such as: int, floeat, bool, string, unicode, tuple.
 Conditional expressions return different values based on the result of boolean expression spcified by the programmer (based on the condition being true or false). The result of boolian expression is either True or False.
 
 #### What are different types of arguments in Python?
-1.default arguments (assigning default values with =)
-2.keyword arguments (assigning values, disregarding argument positions)
-3.arbitrary arguments (using packing/unpacking with *, **)
+-default arguments | def hello(name,msg):
+-keyword arguments | def hello(name = "Bruce",msg = "Hello there")
+-positional arguments | def greet("Bruce", msg="HelloThere")
+-arbitrary positional arguments |
+-arbitrary keyword arguments |
 
 #### What is variable shadowing? (context: variable scope)
-A variable declared within a certain scope which has the same name as a variable declared in an outer scope. This outer variable is said to be shadowed by the inner variable, while the inner identifier is said to mask the outer indertifier. This can lead to confusion, as it may be unclear which variable subsequent uses of the sahdowed variable name refer to.
+A variable declared within a certain scope which has the same name as a variable declared in an outer scope.
+This outer variable is said to be shadowed by the inner variable, while the inner identifier is said to mask the outer indertifier.
+This can lead to confusion, as it may be unclear which variable subsequent uses of the sahdowed variable name refer to.
 
 #### What can happen if you try to delete/drop/add an item from a List, while you are iterating over it in Python?
 With add (append): The iteration continues without an issue, albeit with different ammount of elements.
